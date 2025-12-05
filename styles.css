@@ -7,11 +7,11 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f0f2f5;
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 html {
-    scroll-behavior: smooth; /* Extra smooth scroll support */
+    scroll-behavior: smooth;
 }
 
 /* ==========================
@@ -39,14 +39,22 @@ nav ul li a:hover { color: #ff6b6b; }
    HERO
    ========================== */
 header {
-    background: url('https://www.bcda.gov.ph/sites/default/files/styles/featured_image_nid_750/public/2025-09/New%20Clark%20City%20%28annual%20report%29.jpg?itok=bWKBMoIS') no-repeat center center/cover;
+    background: url('https://www.bcda.gov.ph/sites/default/files/styles/featured_image_nid_750/public/2025-09/New%20Clark%20City%20%28annual%20report%29.jpg') no-repeat center center/cover;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    position: relative;
 }
+.hero-overlay {
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+.hero-content { position: relative; z-index: 1; }
 header h1 { font-size: 4rem; margin: 0; }
 header .tagline { font-size: 1.8rem; margin-top: 0.5rem; font-style: italic; }
 
@@ -57,7 +65,7 @@ section {
     padding: 4rem 10%; 
     border-radius: 10px; 
     margin: 2rem 0; 
-    scroll-margin-top: 80px; /* Offset for sticky navbar */
+    scroll-margin-top: 80px;
 }
 
 /* ==========================
@@ -143,11 +151,6 @@ h2 { color: #1a1a1a; margin-bottom:1rem; border-bottom:2px solid #ff6b6b; displa
 #analysis h2, #impacts h2, #stakeholders h2 { color: white; border-color: #ffdede; }
 
 /* ==========================
-   SIDE-BY-SIDE ANALYSIS (removed image)
-   ========================== */
-.analysis-text { color: white; }
-
-/* ==========================
    OWNER PROFILE
    ========================== */
 .owner-container { display:flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
@@ -161,46 +164,21 @@ h2 { color: #1a1a1a; margin-bottom:1rem; border-bottom:2px solid #ff6b6b; displa
    ========================== */
 .impact-container, .stakeholders { display:flex; flex-wrap:wrap; gap:2rem; }
 .impact, .stakeholders > div { flex:1; min-width:300px; }
-
-#impacts h2,
-#impacts h3,
-#impacts p,
-#impacts ul,
-#stakeholders h2,
-#stakeholders h3,
-#stakeholders p,
-#stakeholders ul {
-    position: relative;
-    z-index:1;
-}
-
-/* Impact cards */
-.impact { 
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 2rem;
-}
-
-/* Flex styling for stakeholders inside content */
-#stakeholders .stakeholders {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-#stakeholders .stakeholders > div { flex:1; min-width:300px; }
+.impact { background: rgba(255,255,255,0.1); border-radius: 10px; padding: 2rem; }
 
 /* ==========================
-   HISTORY SIDE IMAGE
+   HISTORY WRAPPER
    ========================== */
-.history-content {
-    max-width: 60%;
+.history-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    position: relative;
 }
+.history-content { max-width: 60%; }
 .history-img {
-    position: absolute;
-    top: 50%;       
-    right: 10%;      
-    transform: translateY(-50%);
-    width: 300px;   
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -208,66 +186,30 @@ h2 { color: #1a1a1a; margin-bottom:1rem; border-bottom:2px solid #ff6b6b; displa
 /* ==========================
    FOOTER
    ========================== */
-footer { text-align:center; padding:2rem; background-color:#1a1a1a; color:white; }
-
-/* ==========================
-   LINKS
-   ========================== */
-a { color:#ff6b6b; text-decoration:none; }
-a:hover { text-decoration: underline; }
-
-/* ==========================
-   FONT SIZE ADJUSTMENTS FOR READABILITY
-   ========================== */
-.topic-summary, #analysis, #history, #impacts, #stakeholders, #recommendations, #sources {
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-.topic-summary h2, #analysis h2, #history h2, #impacts h2, #stakeholders h2, #recommendations h2, #sources h2 {
-    font-size: 1.7rem;
-}
-
-.topic-summary p, #analysis p, #impacts p, #stakeholders p, #recommendations p, #sources p {
-    font-size: 1rem;
-}
-
-/* ==========================
-   RECOMMENDATIONS & SOURCES - simple layout
-   ========================== */
-#recommendations, #sources {
+footer { text-align:center; padding:2rem; background-color:black
+#sources {
+    background-color: #f8f9fa;  /* light background */
     padding: 2rem 10%;
     border-radius: 10px;
     color: #1a1a1a;
+    position: relative;  /* ensures no overlays block content */
+    z-index: 1;          /* clickable */
 }
 
-#recommendations ul, #sources ul {
+#sources ul {
     list-style: disc inside;
     margin-top: 1rem;
+    padding-left: 0;
 }
 
 #sources a {
     color: #ff6b6b;
     text-decoration: underline;
+    position: relative; /* ensures it's clickable above other layers */
+    z-index: 2;
 }
 
-/* ==========================
-   RESPONSIVE SCROLL OFFSET & IMAGES
-   ========================== */
-@media (max-width: 1024px) {
-    .history-img {
-        position: static;
-        width: 100%;
-        margin: 1rem 0;
-        transform: none;
-    }
-}
-
-@media (max-width: 768px) {
-    section {
-        scroll-margin-top: 60px; /* Adjust for smaller navbar on mobile */
-    }
-    .history-content {
-        max-width: 100%;
-    }
+#sources a:hover {
+    text-decoration: none;
+    color: #ff4b4b;
 }
