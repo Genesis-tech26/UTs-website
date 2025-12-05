@@ -1,152 +1,196 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Political + Well-being — Project</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="color-scheme" content="light dark">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Clark City</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="siteHeader" role="banner">
-    <div class="container header-grid">
-      <div class="brand-block">
-        <a href="#home" class="brand">
-          <span class="brand-title">Political · Well-being</span>
-          <span class="brand-sub">Information Website • GEN 002</span>
-        </a>
-      </div>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">New Clark City</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#owner-profile">Owner's Profile</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#sources">Sources</a></li>
+        </ul>
+    </nav>
 
-      <div class="controls">
-        <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark mode">
-          <span class="vis">Toggle theme</span>
-          <svg class="icon moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
-        </button>
-
-        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
-        </button>
-      </div>
-
-      <nav id="mainNav" class="main-nav" role="navigation" aria-label="Main navigation">
-        <a class="nav-link" href="#home">Home</a>
-        <a class="nav-link" href="#owners">Owners' Profile</a>
-        <a class="nav-link" href="#analysis">Analysis</a>
-        <a class="nav-link" href="#solutions">Solutions</a>
-        <a class="nav-link" href="#sources">Sources</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
     <!-- HERO -->
-    <section id="home" class="hero container">
-      <div class="hero-left fade-in">
-        <h1>Political Consciousness & Personal Well-Being</h1>
-        <p class="lead">A student research project template focusing on civic engagement, accessible policy recommendations, and practical solutions for communities.</p>
-
-        <div class="hero-actions">
-          <a class="btn primary" href="#analysis">View Analysis</a>
-          <a class="btn outline" href="#sources">Sources & Brief</a>
+    <header id="home">
+        <div class="hero-content">
+            <h1>Progress at a Cost</h1>
+            <p class="tagline">Progress that leaves no one behind?</p>
         </div>
+    </header>
 
-        <ul class="meta-list">
-          
-       </ul>
-      </div>
-
-      <div class="hero-right fade-in">
-        <div class="card quick-stats">
-          <h3>Project Brief</h3>
-          
-        </div>
-      </div>
+    <!-- TOPIC SUMMARY -->
+    <section class="topic-summary">
+        <h2>Land-use conflict and displacement under New Clark City</h2>
+        <p>The development of New Clark City in Tarlac highlights increasing land-use conflicts as agricultural and ancestral lands are converted into urban zones — causing displacement, livelihood loss, and environmental concerns.</p>
     </section>
 
-    <!-- OWNERS' PROFILE -->
-    <section id="owners" class="container section">
-      <h2>Owners' Profile</h2>
-      <p class="muted">Team members, roles, and short self-care practices (humanized and concise).</p>
-
-      <div class="profile-grid">
-        <article class="profile-card fade-in-delay">
-          <h3>Quinto, Genesis R.</h3>
-          <p class="role">Content & Research</p>
-          <p><strong>Self-care:</strong> Morning walk, sports, watching movies and sleeping.</p>
-        </article>
-
-        <article class="profile-card fade-in-delay">
-          <h3>Member Two</h3>
-          <p class="role">Design & Layout</p>
-          <p><strong>Self-care:</strong> Short yoga breaks, playlists for focus.</p>
-        </article>
-
-        <article class="profile-card fade-in-delay">
-          <h3>Member Three</h3>
-          <p class="role">Fact-checking & Sources</p>
-          <p><strong>Self-care:</strong> Reading fiction and nightly digital detox.</p>
-        </article>
-      </div>
+    <!-- OWNER PROFILE -->
+    <section id="owner-profile">
+        <h2>Website Owner's Profile</h2>
+        <div class="owner-container">
+            <!-- Example of 9 members -->
+            <div class="owner-card">
+                <h3>Quinto, Genesis R.</h3>
+                <p><strong>Role:</strong> Web Designer and Leader</p>
+                <p><strong>Self-Care:</strong> Playing instruments, sports, and meditation.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Madriaga, Liezza Victoria D.</h3>
+                <p><strong>Role:</strong> Web Layout and Research</p>
+                <p><strong>Self-Care:</strong> Listening to music, playing instruments, and art making.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Dumaguit, Shaine Nathalie Q.</h3>
+                <p><strong>Role:</strong> Web Contents</p>
+                <p><strong>Self-Care:</strong> Sleeping early to stay healthy, music for relaxation, and taking a breaks when feeling overwhelmed.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Penuliar, Joceyn Avah N.</h3>
+                <p><strong>Role:</strong> Web Contents</p>
+                <p><strong>Self-Care:</strong> I set healthy boundaries to protect my space and reconnect with myself.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Fuerte, Dwyne E.</h3>
+                <p><strong>Role:</strong> Web Contents</p>
+                <p><strong>Self-Care:</strong> Long baths to relax, reading to escape, and journaling to process emotions.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Dela Cruz, Rose Gemma S.</h3>
+                <p><strong>Role:</strong> Web Contents and Layouts</p>
+                <p><strong>Self-Care:</strong> Spending time in nature, listening to music.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Mendeguarin, Raine L.</h3>
+                <p><strong>Role:</strong> Conclusions & Recommendations</p>
+                <p><strong>Self-Care:</strong> Taking a breaks from phone/socialmedia, taking a rest when feeling exhusted.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Mangalubnan, Timothy</h3>
+                <p><strong>Role:</strong> Proofreader.</p>
+                <p><strong>Self-Care:</strong> Nature trips, music bonding, and playing sports.</p>
+            </div>
+            <div class="owner-card">
+                <h3>Rosario, Marie Jho</h3>
+                <p><strong>Role:</strong> Proofreader</p>
+                <p><strong>Self-Care:</strong> Spending time outdoors for clarity, forgiving myself and moving forward.</p>
+            </div>
+        </div>
     </section>
 
     <!-- ANALYSIS -->
-    <section id="analysis" class="container section">
-      <h2>Analysis / The Issue</h2>
-      <p class="muted">Short, evidence-based points. Bold calls out facts for quick evaluation.</p>
-
-      <article class="analysis-card fade-in">
-        <h3>Selected Topic: <span class="topic">Youth Voter Education</span></h3>
-        <ul class="analysis-list">
-          <li><strong>Context:</strong> Local initiatives aim to increase registration and civic literacy among 18–25 year olds.</li>
-          <li><strong>Evidence:</strong> Studies show targeted, neutral curricula increase participation without partisan influence.</li>
-          <li><strong>Risk:</strong> Poorly framed programs can be perceived as partisan — transparent sourcing is essential.</li>
-        </ul>
-      </article>
+    <section id="analysis" class="bg-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Issue Overview</h2>
+            <div class="analysis-text">
+                <p>New Clark City in Capas, Tarlac is promoted as the Philippines’ “city of the future.” It is marketed as a smart, green, world-class metropolis, designed to symbolize modern governance and national progress.</p>
+                <p>However, behind this polished image lies a deep political, social, and environmental conflict. Large areas of farmland and ancestral domains have been converted into commercial, government, and sports facilities. Long-time residents, including Aeta communities, face displacement, loss of livelihood, and erosion of cultural identity.</p>
+                <p>What appears to be progress for some has become a source of land dispossession and environmental disruption for others. This website examines tensions between national development, human rights, and environmental justice.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- SOLUTIONS -->
-    <section id="solutions" class="container section">
-      <h2>Solutions / Recommendations</h2>
-      <ol class="solutions-list fade-in">
-        <li><strong>Neutral curricula:</strong> Design content focused on civic skills, not party politics.</li>
-        <li><strong>Official partnerships:</strong> Work with election offices to provide verified registration steps.</li>
-        <li><strong>Accessible formats:</strong> Videos, infographics, and translations for marginalized communities.</li>
-        <li><strong>Measure impact:</strong> Pre/post surveys to assess knowledge and registration gains.</li>
-      </ol>
+    <!-- BACKGROUND & HISTORY -->
+    <section id="history">
+        <h2>Background & History</h2>
+        <div class="history-content">
+            <p>New Clark City was conceptualized under the government’s Build Build Build program in 2016. The BCDA planned to transform over 9,000 hectares into a modern district with offices, sports centers, commercial hubs, and eco-friendly residential zones.</p>
+            <p>Before the project began, these lands were home to farmers and Aeta communities who relied on agriculture, hunting, gathering, and cultural traditions.</p>
+            <p>Construction cleared ancestral territories and farmlands, raising concerns about land ownership, cultural preservation, and displacement.</p>
+        </div>
+        <img src="https://ejatlas.org/media/conflict/the-struggle-for-land-in-the-new-clark-city-project-in-tarlac/clark_location.jpeg?fbclid=PAVERFWAOfRDNleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaeDWM_1hxGFkopMzCO4JwVBuDOkL16MM-mEjwky-XKqKZW0EKjD3frR4Fw7gg_aem_30ZXR-ojByq0Gj29aOXKRQ" alt="History Side" class="history-img">
+    </section>
+
+    <!-- IMPACTS -->
+    <section id="impacts" class="bg-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Impacts on Communities and Environment</h2>
+            <div class="impact-container">
+                <div class="impact impact-communities">
+                    <h3>Impacts on Communities</h3>
+                    <ul>
+                        <li>Farmers lost access to farmlands, affecting income and food security.</li>
+                        <li>Relocated families were transferred to areas lacking resources, making recovery difficult.</li>
+                        <li>Aeta communities lost hunting grounds, cultural spaces, and forest resources essential to their identity.</li>
+                    </ul>
+                </div>
+                <div class="impact impact-environment">
+                    <h3>Impacts on the Environment</h3>
+                    <ul>
+                        <li>Forest clearing disrupted natural habitats and threatened biodiversity.</li>
+                        <li>Changes to water pathways increased the risk of flooding and soil degradation.</li>
+                        <li>Critics emphasize the lack of strong environmental safeguards in the planning process.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAKEHOLDERS -->
+    <section id="stakeholders" class="bg-section">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Political Debates & Stakeholders</h2>
+            <div class="stakeholders">
+                <div>
+                    <h3>Supporters (Government & Investors)</h3>
+                    <ul>
+                        <li>View NCC as a symbol of progress and competitiveness.</li>
+                        <li>Argue it will increase economic activity and attract investors.</li>
+                        <li>Claim it provides job opportunities and improves national infrastructure.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Opponents (NGOs, Farmers, Aeta Representatives, Environmentalists)</h3>
+                    <ul>
+                        <li>Criticize the lack of consultation, transparency, and fair relocation.</li>
+                        <li>Question whether ancestral lands and community rights are being protected.</li>
+                        <li>Raise concerns about displacement, ecological harm, and lack of accountability.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECOMMENDATIONS / CONCLUSIONS -->
+    <section id="recommendations">
+        <h2>Conclusion & Recommendations</h2>
+        <p>New Clark City’s development has created significant tensions between national progress and local community rights. While it symbolizes modern governance and urban growth, it has also caused displacement, cultural disruption, and environmental challenges.</p>
+        <ul>
+            <li>Consult affected communities meaningfully.</li>
+            <li>Protect ancestral domains and cultural heritage.</li>
+            <li>Provide fair compensation and relocation programs.</li>
+            <li>Implement strict environmental safeguards.</li>
+            <li>Ensure marginalized groups are not pushed aside.</li>
+        </ul>
     </section>
 
     <!-- SOURCES -->
-    <section id="sources" class="container section">
-      <h2>Sources</h2>
-      <p class="muted">Add at least five credible sources (government reports, academic papers, reputable news). Example placeholders below — replace with your actual citations.</p>
-
-      <ol class="sources-list fade-in">
-        <li>Commission on Elections. Voter registration statistics (Year).</li>
-        <li>Smith, J. "The Impact of Civic Education" — Journal of Civic Studies (Year).</li>
-        <li>National News Outlet. Article title — Date.</li>
-        <li>Government report. "Youth Participation and Policy" — Agency, Year.</li>
-        <li>NGO study. "Measuring Voter Awareness" — Organization, Year.</li>
-      </ol>
+    <section id="sources">
+        <h2>Sources</h2>
+        <ul>
+            <li><a href="https://cpdg.ph/smart-and-sustainable-city-sugarcoats-development-aggression-in-new-clark-city-tarlac/" target="_blank">CPDG – Smart and Sustainable City</a></li>
+            <li><a href="https://www.rappler.com/nation/new-clark-city-farmers-fear-displacement/" target="_blank">Rappler – New Clark City project displaces farmers</a></li>
+            <li><a href="https://www.bulatlat.org/2020/03/03/aeta-community-assails-govt-trespassing-in-ancestral-land/" targer="_blank">Bulatlat – Aetas fear loss of ancestral land</a></li>
+            <li><a href="https://www.gmanetwork.com/news/topstories/nation/757546/no-ips-displaced-in-new-clark-city-development-capas-mayor-tells-senate/story/" target="_blank">GMA NETWORK – No IPs displaced in New Clark City development, Capas mayor tells Senate</a></li>
+            <li><a href="https://newsinfo.inquirer.net/1139364/new-clark-city-development-for-whom/" targer="_blank">Inquirer.net - New Clark City: Development for Whom?</a></li>
+        </ul>
     </section>
-  </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div>
-        <p class="muted small">
-      <div class="footer-right">
-        
-      </div>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Progress at a Cost. All rights reserved.</p>
+    </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
