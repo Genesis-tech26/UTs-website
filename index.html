@@ -3,196 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Clark City</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Something I Want to Ask You 💌</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <div class="logo">New Clark City</div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#owner-profile">Owner's Profile</a></li>
-            <li><a href="#analysis">Analysis</a></li>
-            <li><a href="#recommendations">Recommendations</a></li>
-            <li><a href="#sources">Sources</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1 id="title">Hey bebee…</h1>
+        <p id="text">check this one pleasee</p>
 
-    <!-- HERO -->
-    <header id="home">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Progress at a Cost</h1>
-            <p class="tagline">Progress that leaves no one behind?</p>
+        <button id="nextBtn">Next ➜</button>
+
+        <div class="choices hidden">
+            <button id="yesBtn">Yes 💖</button>
+            <button id="noBtn">I need a hug first 🤍</button>
         </div>
-    </header>
+    </div>
 
-    <!-- TOPIC SUMMARY -->
-    <section class="topic-summary">
-        <h2>Land-use conflict and displacement under New Clark City</h2>
-        <p>The development of New Clark City in Tarlac highlights increasing land-use conflicts as agricultural and ancestral lands are converted into urban zones — causing displacement, livelihood loss, and environmental concerns.</p>
-    </section>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="valentine-laufey.mp3" type="audio/mpeg">
+    </audio>
 
-    <!-- OWNER PROFILE -->
-    <section id="owner-profile">
-        <h2>Website Owner's Profile</h2>
-        <div class="owner-container">
-            <div class="owner-card">
-                <h3>Quinto, Genesis R.</h3>
-                <p><strong>Role:</strong> Web Designer and Leader</p>
-                <p><strong>Self-Care:</strong> Playing instruments, sports, and meditation.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Madriaga, Liezza Victoria D.</h3>
-                <p><strong>Role:</strong> Web Layout and Research</p>
-                <p><strong>Self-Care:</strong> Listening to music, playing instruments, and art making.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Dumaguit, Shaine Nathalie Q.</h3>
-                <p><strong>Role:</strong> Web Contents</p>
-                <p><strong>Self-Care:</strong> Sleeping early to stay healthy, music for relaxation, and taking breaks when feeling overwhelmed.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Penuliar, Joceyn Avah N.</h3>
-                <p><strong>Role:</strong> Web Contents</p>
-                <p><strong>Self-Care:</strong> I set healthy boundaries to protect my space and reconnect with myself.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Fuerte, Dwyne E.</h3>
-                <p><strong>Role:</strong> Web Contents</p>
-                <p><strong>Self-Care:</strong> Long baths to relax, reading to escape, and journaling to process emotions.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Dela Cruz, Rose Gemma S.</h3>
-                <p><strong>Role:</strong> Web Contents and Layouts</p>
-                <p><strong>Self-Care:</strong> Spending time in nature, listening to music.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Mendeguarin, Raine L.</h3>
-                <p><strong>Role:</strong> Conclusions & Recommendations</p>
-                <p><strong>Self-Care:</strong> Taking a break from phone/social media, resting when exhausted.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Mangalubnan, Timothy</h3>
-                <p><strong>Role:</strong> Proofreader</p>
-                <p><strong>Self-Care:</strong> Nature trips, music bonding, and playing sports.</p>
-            </div>
-            <div class="owner-card">
-                <h3>Rosario, Marie Jho</h3>
-                <p><strong>Role:</strong> Proofreader</p>
-                <p><strong>Self-Care:</strong> Spending time outdoors for clarity, forgiving myself, and moving forward.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ANALYSIS -->
-    <section id="analysis" class="bg-section">
-        <div class="overlay"></div>
-        <div class="content">
-            <h2>Issue Overview</h2>
-            <div class="analysis-text">
-                <p>New Clark City in Capas, Tarlac is promoted as the Philippines’ “city of the future.” It is marketed as a smart, green, world-class metropolis, designed to symbolize modern governance and national progress.</p>
-                <p>However, behind this polished image lies a deep political, social, and environmental conflict. Large areas of farmland and ancestral domains have been converted into commercial, government, and sports facilities. Long-time residents, including Aeta communities, face displacement, loss of livelihood, and erosion of cultural identity.</p>
-                <p>What appears to be progress for some has become a source of land dispossession and environmental disruption for others. This website examines tensions between national development, human rights, and environmental justice.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- BACKGROUND & HISTORY -->
-    <section id="history">
-        <h2>Background & History</h2>
-        <div class="history-wrapper">
-            <div class="history-content">
-                <p>New Clark City was conceptualized under the government’s Build Build Build program in 2016. The BCDA planned to transform over 9,000 hectares into a modern district with offices, sports centers, commercial hubs, and eco-friendly residential zones.</p>
-                <p>Before the project began, these lands were home to farmers and Aeta communities who relied on agriculture, hunting, gathering, and cultural traditions.</p>
-                <p>Construction cleared ancestral territories and farmlands, raising concerns about land ownership, cultural preservation, and displacement.</p>
-            </div>
-            <img src="https://ejatlas.org/media/conflict/the-struggle-for-land-in-the-new-clark-city-project-in-tarlac/clark_location.jpeg" alt="History Side" class="history-img">
-        </div>
-    </section>
-
-    <!-- IMPACTS -->
-    <section id="impacts" class="bg-section">
-        <div class="overlay"></div>
-        <div class="content">
-            <h2>Impacts on Communities and Environment</h2>
-            <div class="impact-container">
-                <div class="impact impact-communities">
-                    <h3>Impacts on Communities</h3>
-                    <ul>
-                        <li>Farmers lost access to farmlands, affecting income and food security.</li>
-                        <li>Relocated families were transferred to areas lacking resources, making recovery difficult.</li>
-                        <li>Aeta communities lost hunting grounds, cultural spaces, and forest resources essential to their identity.</li>
-                    </ul>
-                </div>
-                <div class="impact impact-environment">
-                    <h3>Impacts on the Environment</h3>
-                    <ul>
-                        <li>Forest clearing disrupted natural habitats and threatened biodiversity.</li>
-                        <li>Changes to water pathways increased the risk of flooding and soil degradation.</li>
-                        <li>Critics emphasize the lack of strong environmental safeguards in the planning process.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STAKEHOLDERS -->
-    <section id="stakeholders" class="bg-section">
-        <div class="overlay"></div>
-        <div class="content">
-            <h2>Political Debates & Stakeholders</h2>
-            <div class="stakeholders">
-                <div>
-                    <h3>Supporters (Government & Investors)</h3>
-                    <ul>
-                        <li>View NCC as a symbol of progress and competitiveness.</li>
-                        <li>Argue it will increase economic activity and attract investors.</li>
-                        <li>Claim it provides job opportunities and improves national infrastructure.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Opponents (NGOs, Farmers, Aeta Representatives, Environmentalists)</h3>
-                    <ul>
-                        <li>Criticize the lack of consultation, transparency, and fair relocation.</li>
-                        <li>Question whether ancestral lands and community rights are being protected.</li>
-                        <li>Raise concerns about displacement, ecological harm, and lack of accountability.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RECOMMENDATIONS / CONCLUSIONS -->
-    <section id="recommendations">
-        <h2>Conclusion & Recommendations</h2>
-        <p>New Clark City’s development has created significant tensions between national progress and local community rights. While it symbolizes modern governance and urban growth, it has also caused displacement, cultural disruption, and environmental challenges.</p>
-        <ul>
-            <li>Consult affected communities meaningfully.</li>
-            <li>Protect ancestral domains and cultural heritage.</li>
-            <li>Provide fair compensation and relocation programs.</li>
-            <li>Implement strict environmental safeguards.</li>
-            <li>Ensure marginalized groups are not pushed aside.</li>
-        </ul>
-    </section>
-
-    <<!-- SOURCES -->
-<section id="sources">
-    <h2>Sources</h2>
-    <ul>
-        <li><a href="https://cpdg.ph/smart-and-sustainable-city-sugarcoats-development-aggression-in-new-clark-city-tarlac/" target="_blank">CPDG – Smart and Sustainable City</a></li>
-        <li><a href="https://www.rappler.com/nation/new-clark-city-farmers-fear-displacement/" target="_blank">Rappler – New Clark City project displaces farmers</a></li>
-        <li><a href="https://www.bulatlat.org/2020/03/03/aeta-community-assails-govt-trespassing-in-ancestral-land/" target="_blank">Bulatlat – Aetas fear loss of ancestral land</a></li>
-        <li><a href="https://www.gmanetwork.com/news/topstories/nation/757546/no-ips-displaced-in-new-clark-city-development-capas-mayor-tells-senate/story/" target="_blank">GMA NETWORK – No IPs displaced in New Clark City development, Capas mayor tells Senate</a></li>
-        <li><a href="https://newsinfo.inquirer.net/1139364/new-clark-city-development-for-whom/" target="_blank">Inquirer.net - New Clark City: Development for Whom?</a></li>
-    </ul>
-</section>
-
-    <footer>
-        <p>&copy; 2025 Progress at a Cost. All rights reserved.</p>
-    </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

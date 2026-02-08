@@ -1,42 +1,66 @@
-// script.js
+const title = document.getElementById("title");
+const text = document.getElementById("text");
+const nextBtn = document.getElementById("nextBtn");
+const choices = document.querySelector(".choices");
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const music = document.getElementById("bgMusic");
 
-document.addEventListener("DOMContentLoaded", () => {
-    const navLinks = document.querySelectorAll("nav ul li a");
-    const sections = document.querySelectorAll("section");
-    const navHeight = document.querySelector("nav").offsetHeight;
+let step = 0;
+let musicStarted = false;
 
-    // Smooth scroll when clicking nav links
-    navLinks.forEach(link => {
-        link.addEventListener("click", e => {
-            e.preventDefault();
-            const targetId = link.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
+const messages = [
+    "ehe js kidding bebe, this is for you and made it for you…",
+    
+    "I love you, baby! 💕",
+    "I’m sorry if I made you wait for me to ask you to be my Valentine.",
+    "I know it's a little bit late na ",
+    "And I promise this won’t happen again."
+];
 
-            if (targetSection) {
-                window.scrollTo({
-                    top: targetSection.offsetTop - navHeight, // adjust for sticky nav
-                    behavior: "smooth"
-                });
-            }
-        });
-    });
+// Typing animation
+function typeText(message) {
+    text.textContent = "";
+    let index = 0;
 
-    // Optional: Highlight active section in nav
-    window.addEventListener("scroll", () => {
-        let currentSection = "";
+    const typing = setInterval(() => {
+        if (index < message.length) {
+            text.textContent += message.charAt(index);
+            index++;
+        } else {
+            clearInterval(typing);
+        }
+    }, 40);
+}
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - navHeight - 10; // small offset
-            if (window.scrollY >= sectionTop) {
-                currentSection = section.getAttribute("id");
-            }
-        });
+nextBtn.addEventListener("click", () => {
 
-        navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").substring(1) === currentSection) {
-                link.classList.add("active");
-            }
-        });
-    });
+    // Start music on first tap (mobile safe)
+    if (!musicStarted) {
+        music.volume = 0.35;
+        music.play().catch(() => {});
+        musicStarted = true;
+    }
+
+    if (step < messages.length) {
+        typeText(messages[step]);
+        step++;
+    } else {
+        title.textContent = "💘 One last question…";
+        typeText(
+            "Will you be my Valentine, hoon? Say YES pleaseeeeee "
+        );
+        nextBtn.classList.add("hidden");
+        choices.classList.remove("hidden");
+    }
+});
+
+yesBtn.addEventListener("click", () => {
+    title.textContent = "💖💖💖";
+    typeText("I know you're gonna say yes eh, ako lang dapat bebeee! mwaaaaa🥰");
+    choices.classList.add("hidden");
+});
+
+noBtn.addEventListener("click", () => {
+    typeText("MWAMWAMWAMWAMWA AND HUG KITA TIGHT, I WUV WUV UU!🤍🥹");
 });
